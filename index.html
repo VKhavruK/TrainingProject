@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>S&T architects</title>
+	<link rel="stylesheet" href="css/main.css">	
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" ></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/cusel-min-2.5.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var params = {
+				changedEl: "select",
+				// visRows: 4,
+				scrollArrows: true
+			}
+			cuSel(params);
+		});
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="head">
+				<div class="content">
+					<div class="logo">
+						<img src="img/logo.png" alt="logo">
+					</div>
+					<div class="hide-nav">
+						<span class="hide-nav_line hide-nav_line-top"></span>
+						<span class="hide-nav_line hide-nav_line-middle"></span>
+						<span class="hide-nav_line hide-nav_line-bottom"></span>
+					</div>
+					<ul class="menu">
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Проекты</a></li>
+						<li><a href="#">Строители</a></li>
+						<li><a href="#">Магазин</a></li>
+						<li>RUS
+							<ul class="lang">
+								<li><a href="#">ENG</a></li>
+								<li><a href="#">RUS</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="contacts">
+						<p>Киев<span>0 800 211 356</span></p>
+						<p>Одесса<span>+38 093 526 86 36</span></p>
+						<p>mail@sivak-trigubchak.com</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="content">
+				<h1>Создаем интерьеры,<br>
+				в которых наслаждаются жизнью.</h1>
+				<div>
+					<h4>Интерьеры</h4>
+					<p>Создаем интерьеры, в которых хочется отдыхать, работать и просто наслаждаться жизнью.</p>
+				</div>
+				<div>
+					<h4>Архитектура</h4>
+					<p>Мы спроектируем и построим ваш дом, выражающий ваше представление о комфортной жизни.</p>
+				</div>
+				<div>
+					<h4>Коммерция</h4>
+					<p>Поможем выбрать правильное помещение для вашего ресторана или офиса ещё до покупки. Ведем проект от идеи и до первого покупателя.</p>
+				</div>
+			</div>
+		</div>
+		<form action="url" >
+			<div class="calculation">
+				<div class="content">
+					<div class="form-col1">
+						<h3>Экспресс расчет</h3>
+						<p>Узнайте предварительную стоимость работы в течении трех часов</p>
+					</div>
+					<div class="form-col2">
+						<input type="text" name="city" value="Киев">
+						<p>
+							<input id="living" type="radio" name="tipe" value="rad1" checked="checked">
+							<label for="living">Жилое</label>
+							<input id="commerce" type="radio" name="tipe" value="rad2">
+							<label for="commerce">Коммерция</label>
+						</p>
+					</div>
+					<div class="form-col3">
+						<input id="button1" class="open" type="checkbox" hidden>
+						<label class="btn" for="button1">Заполнить форму</label>
+						<div class="form-panel">
+							<div class="next-forms">
+								<div class="form2">
+									<div class="content">
+										<div class="form2col1">
+											<div class="comercial">											
+												<input id="ofice" type="radio" name="rooms" value="room1">
+												<label for="ofice">Офис</label>
+												<input id="restaurant" type="radio" name="rooms" value="room2">
+												<label for="restaurant">Ресторан</label>
+												<input id="cafe" type="radio" name="rooms" value="room3">
+												<label for="cafe">Кафе</label>
+												<input id="shop" type="radio" name="rooms" value="room4">
+												<label for="shop">Магазин</label>
+												<input id="sport" type="radio" name="rooms" value="room5">
+												<label for="sport">Спорт</label>
+												<input id="other" type="radio" name="rooms" value="room6">
+												<label for="other">Другое</label>	
+											</div>
+											<div class="living">
+											<div class="rooms">Количество комнат
+												<div class="inselect">
+													<select style="width: 80px">
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="4">5</option>
+														<option value="4">6</option>
+													</select>
+												</div>
+												<div class="living">
+													<input id="house" type="radio" name="rooms" value="room7">
+													<label for="house">Дом</label>
+													<input id="apartment" type="radio" name="rooms" value="room8">
+													<label for="apartment">Квартира</label>
+												</div>
+											</div>
+										</div>
+											<p class="field">Площадь m<sup>2</sup> <span class="number"><input type="number" name="number" value="100"></span></p>
+											<p class="field"><span class="town">Город <input id="town" type="text" value="Івано-Франківськ, Україна"></span></p>
+										</div>
+										<div class="form2col2">
+											<p class="field">Сроки желаемой сдачи<input id="data" class="term" type="text"></p>
+											<div class="list living">Количество членов семьи
+												<div class="inselect">
+													<select style="width: 80px">
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="4">5</option>
+														<option value="4">6</option>
+													</select>
+												</div>
+											</div>
+											<div class="list">Стиль
+												<div class="inselect">
+													<select style="width: 200px">
+														<option value="1">Современный</option>
+														<option value="2">Дешовый</option>
+														<option value="3">Третий</option>
+														<option value="4">Красивый</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="form2col3">
+											<p class="wishes">Пожелания:</p>
+											<textarea name="wishes" id="wish" placeholder="Пожелания" ></textarea>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+								<div class="form3">
+									<div class="content">
+										<input class="form3bottom" type="text" name="name" value="" placeholder="Имя">
+										<input class="form3bottom" id="phone" type="tel" name="tel" placeholder="Телефон">
+										<input class="form3bottom" type="email" name="mail" placeholder="E-mail">
+										<input id="button2" class="open" type="checkbox" hidden>
+										<label class="btn" for="button2">Отправить форму</label>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</form>
+		<div class="wrap">
+			<div class="example-box">
+				<a class="example" href="#">
+					<img src="img/fon-row1col1.png" alt="Башня синергии">
+					<div>
+						<h5>Башня синергии</h5>
+						<p>Конкурсное предложение реконструкции бившего дымохода</p>
+						<span>Киев, Украина<br>2017</span>
+					</div>
+				</a>
+				<a class="example" href="#">
+					<img src="img/fon-row1col2.png" alt="Альтаир">
+					<div>
+						<h5>Альтаир</h5>
+						<p>Квартира для молодоженов</p>
+						<span>Альтаир, Одесса<br>2017</span>
+					</div>
+				</a>
+				<a class="example" href="#">
+					<img src="img/fon-row1col3.png" alt="Дом на берегу озера">
+					<div>
+						<h5>Дом на берегу озера</h5>
+						<p>Проект дома-мастерской</p>
+						<span>Закарпатье, Украина<br>2017</span>
+					</div>
+				</a>
+				<a class="example" href="#">
+					<img src="img/fon-row1col4.png" alt="Дом в Закарпатье">
+					<div>
+						<h5>Дом в Закарпатье</h5>
+						<p>Проект летней резиденции двух семей</p>
+						<span>Закарпатье, Украина<br>2017</span>
+					</div>
+				</a>
+				<a class="example" href="#">
+					<img src="img/fon-row2col1.png" alt="Черный интерьер">
+					<div>
+						<h5>Черный интерьер</h5>
+						<p>Эта квартира не для мужчины холостяка,
+						а дом для молодой женщины и ее дочери.</p>
+						<span>Киев, Украина<br>2017</span>
+					</div>
+				</a>
+				<a class="example" href="#">
+					<img src="img/fon-row2col2.png" alt="Квартира для летнего отдыха">
+					<div>
+						<h5>Квартира для летнего отдыха</h5>
+						<p>Дизайн квартиры для летнего отдыха</p>
+						<span>Одесса, Украина<br>2017</span>
+					</div>
+				</a>
+				<a class="example" href="#">
+					<img src="img/fon-row2col3.png" alt="Квартира с библиотекой">
+					<div>
+						<h5>Квартира с библиотекой</h5>
+						<p>Дизайн квартиры с большой библиотекой</p>
+						<span>Киев, Украина<br>2017</span>
+					</div>
+				</a>
+				<a class="example" href="#">
+					<img src="img/fon-row2col1.png" alt="Черный интерьер">
+					<div>
+						<h5>Черный интерьер</h5>
+						<p>Эта квартира не для мужчины холостяка,
+						а дом для молодой женщины и ее дочери.</p>
+						<span>Киев, Украина<br>2017</span>
+					</div>
+				</a>
+				<a class="example" href="#">
+					<img src="img/fon-row1col1.png" alt="Башня синергии">
+					<div>
+						<h5>Башня синергии</h5>
+						<p>Конкурсное предложение реконструкции бившего дымохода</p>
+						<span>Киев, Украина<br>2017</span>
+					</div>
+				</a>
+				<a class="example" href="#">
+					<img src="img/fon-row1col2.png" alt="Альтаир">
+					<div>
+						<h5>Альтаир</h5>
+						<p>Квартира для молодоженов</p>
+						<span>Альтаир, Одесса<br>2017</span>
+					</div>
+				</a>
+				<a class="example" href="#">
+					<img src="img/fon-row1col3.png" alt="Дом на берегу озера">
+					<div>
+						<h5>Дом на берегу озера</h5>
+						<p>Проект дома-мастерской</p>
+						<span>Закарпатье, Украина<br>2017</span>
+					</div>
+				</a>
+				<a class="example" href="#">
+					<img src="img/fon-row1col4.png" alt="Дом в Закарпатье">
+					<div>
+						<h5>Дом в Закарпатье</h5>
+						<p>Проект летней резиденции двух семей</p>
+						<span>Закарпатье, Украина<br>2017</span>
+					</div>
+				</a>
+				<a class="example" href="#">
+					<img src="img/fon-row2col1.png" alt="Черный интерьер">
+					<div>
+						<h5>Черный интерьер</h5>
+						<p>Эта квартира не для мужчины холостяка,
+						а дом для молодой женщины и ее дочери.</p>
+						<span>Киев, Украина<br>2017</span>
+					</div>
+				</a>
+				<a class="example" href="#">
+					<img src="img/fon-row2col2.png" alt="Квартира для летнего отдыха">
+					<div>
+						<h5>Квартира для летнего отдыха</h5>
+						<p>Дизайн квартиры для летнего отдыха</p>
+						<span>Одесса, Украина<br>2017</span>
+					</div>
+				</a>
+				<a class="example example-last" href="#">
+					<img src="img/fon-row2col3.png" alt="Квартира с библиотекой">
+					<div>
+						<h5>Квартира с библиотекой</h5>
+						<p>Дизайн квартиры с большой библиотекой</p>
+						<span>Киев, Украина<br>2017</span>
+					</div>
+				</a>
+				<a class="last example" href="#">
+					<img class="big" src="img/fon-last.png" alt="#">
+					<img class="small" src="img/fon-last480.png" alt="#">
+					<div>
+						<h5>Показать еще</h5>
+					</div>
+				</a>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="sections">
+			<ul class="hashtags">
+				<li><a href="#">#Архитектура</a></li>
+				<li><a href="#">#Дизайн интерьеров</a></li>
+				<li><a href="#">#Коммерческие объекты</a></li>
+			</ul>
+			<div class="about">
+				<div class="content">
+					<div class="text">
+						<p><b>Об услугах дизайна и миссии студии.</b><br>Мы команда архитекторов, которая обожает свою работу и делимся своей любовью к дизайну и архитектуре с клиентами через проекты. Каждый дизайн уникален, каждый проект дизайна интерьера или архитектуры разрабатывается под своего клиента и по его поставленным задачам. Дизайн наших интерьеров получает награды и попадает на обложки журналов. Мы создаем не просто практичные интерьеры, но и обладающие художественной ценностью. Такие пространства остаются в цене сквозь время и дарят потомкам</p>
+						<p><b>Дизайн вне границ и политики.</b><br>Вы можете заказать дизайн интерьера в Киеве, Одессе или для других городов Украины или стран. Мы работаем независимо от границ, а благодаря универсальности строительных материалов, проект в любой точке земного шара будет реализован согласно идеи.</p>
+					</div>
+					<div class="read">
+						<a href="#">Читать дальше</a>						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<h1>Стоимость услуг</h1>
+			<p>Дизайн нельзя измерить квадратными метрами, часами или килограммами. У нас нет фиксированной цены и каждый проект рассчитывается индивидуально.</p>
+			<span>Деньги и время, сэкономленные с нами, окупают стоимость наших услуг.</span>
+			<form  action="url">
+				<div class="content">
+					<input class="form3bottom" type="text" name="name" value="" placeholder="Имя">
+					<input class="form3bottom" id="phone1" type="tel" name="tel" placeholder="Телефон">
+					<input class="form3bottom" type="email" name="mail" placeholder="E-mail">
+					<input id="button3" class="btn" type="button" value="Получить расчет">
+				</div>
+			</form>
+			<ul class="network">
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+			</ul>
+			<ul class="contacts2">
+				<li><a href="#">Киев  0 800 211 356</a></li>
+				<li><a href="#">Одесса  +38 093 526 86 36</a></li>
+				<li><a href="#">mail@sivak-trigubchak.com</a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>		
+	</div>
+
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

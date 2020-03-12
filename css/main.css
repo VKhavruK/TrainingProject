@@ -1,0 +1,1217 @@
+@import url("fonts.css");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+	color: #fff;
+	font-family: "Gotham Pro";
+}
+.clear {clear: both;}
+
+.header, .head {
+	width: 100%;
+}
+.header {
+	background: #000 url(../img/header_fon.png) center 0 no-repeat;
+	overflow: hidden;
+	padding-bottom: 215px;
+
+}
+.head {
+	position: fixed;
+	background: url(../img/head_fon.png);
+	height: 116px;
+	z-index: 9999;
+}
+.content {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 10px
+}
+.head .content {
+	position: relative;
+}
+.logo {
+	float: left;
+	margin-top: 47px;
+	/*width: 25%;*/
+	/*max-width: 326px;*/
+}
+.hide-nav {
+	position: absolute;
+	display: none;
+	right: 10px;
+	top: 43px;
+	width: 37px;
+	height: 30px;
+}
+.hide-nav_line {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 6px;
+	background: #fff;
+}
+.hide-nav_line-top{
+	top: 0;
+	right: 0;
+}
+.hide-nav_line-middle {
+	top: 12px;
+	right: 0;
+}
+.hide-nav_line-bottom {
+	bottom: 0;
+	right: 0;
+}
+.menu {
+	float: right;
+	list-style: none;
+	font-size: 20px;
+	font-weight: bold;
+
+	height: 116px;
+}
+.menu > li {
+	float: left;
+	padding-top: 45px;
+	margin-left: 60px;
+}
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+}
+.menu li:first-child {
+	margin-left: 0;
+}
+.menu > li:last-child {
+	margin-left: 370px;
+	font-size: 18px;
+	padding-right: 15px;
+	cursor: pointer;
+}
+.menu > li:last-child:after {
+	content: url(../img/shape-lang.png);
+	position: absolute;
+	top: 42px;
+	right: 10px;
+}
+.lang {
+	display: none;
+	position: absolute;
+	right: 10px;
+	list-style: none;
+	background: #000;
+	padding-left: 18px;
+	padding-right: 5px;
+}
+.menu > li:last-child:hover .lang {
+	display: block;
+}
+.lang li:hover:before {
+	content: url(../img/shape.png);
+	position: absolute;
+	left: 2px;
+}
+
+
+
+.contacts {
+	position: absolute;
+	top: 0;
+	right: 93px;
+	font-size: 14px;
+	font-weight: 600;
+	height: 99px;
+	width: 293px;
+	background: #000;
+	padding-top: 17px;
+}
+.contacts p {
+	display: inline-block;
+	margin: 4px 26px;
+}
+.contacts p:nth-child(1) {
+	margin-top: 0;
+}
+
+.contacts span {
+	display: inline-block;
+	vertical-align: baseline;
+	left: 98px;
+	font-size: 18px;
+	font-weight: 900;
+	padding-left: 17px; 
+}
+.contacts p:nth-child(1) span {
+	padding-left: 35px;
+}
+
+/*Оформляємо header нижню частину*/
+h1 {
+	font-size: 60px;
+	margin-top: 200px;
+	margin-bottom: 125px;
+}
+.header > .content > div {
+	float: left;
+	width: 33%;
+	font-size: 18px;
+	font-weight: 600;
+}
+.header > .content > div:nth-child(4) {
+	width: 34%;
+}
+.header > .content > div h4 {
+	font-size: 36px;
+	padding-bottom: 23px;
+}
+.header > .content > div p {
+	padding-right: 18%;
+	line-height: 1.3;
+}
+.header > .content > div:nth-child(4) p {
+	padding-right: 14%;
+}
+
+/*	ОФОРМЛЕННЯ РОЗРАХУНКІВ	*/
+
+.calculation {
+	background: #292929;
+	
+	position: relative;
+}
+form .content {
+	background: #000;
+	color: #fff;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 1%;
+}
+/* Оформлення форми */
+.calculation .content {
+	background: none;
+}
+.form-col1, .form-col2 {
+	float: left;
+}
+.form-col1 { /* Перша колонка */
+	width: 43%;
+	min-width: 425px;
+	padding: 73px 0 95px;
+}
+.form-col1 h3 {
+	font-size: 48px;
+}
+.form-col1 p {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.4;
+	padding-top: 20px;
+	max-width: 70%;
+}
+/* Друга колонка */
+.form-col2 {
+	width: 32%;
+	min-width: 360px;
+	padding-top: 88px;
+}
+/* Текстове поле*/
+input, textarea, select {
+	outline: none;
+}
+.form-col2 input[type="text"] {
+	width: 300px;
+	background: none;
+	border: 2px solid #fff;
+	color: #fff;
+	padding: 20px 25px;
+	font-size: 18px;
+	font-weight: 800;
+}
+/* Радіо-кнопки */
+.form-col2 p {
+	margin-top: 23px;
+}
+.form-col2 label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 33px;
+	line-height: 1.4;
+	width: 40%;
+}
+input[type="radio"] { /* Прибираємо стандартні радіо-кнопки */
+	display: none;
+}
+.form-col2 label:before { /* Задаємо вигляд новим радіокнопкам */
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+
+.form-col2 input[type="radio"]:checked + label:before {  /*вставляємо галочку при натисканні на радіо-кнопку*/
+	content: url(../img/shape.png);
+	text-align: center;
+	line-height: 15px;
+}
+
+
+
+/* Третя колонка */
+.form-col3 {
+	float: right;
+	max-width: 25%;
+	min-width: 288px;
+	text-align: right;
+	padding-top: 130px;
+}
+.form-col3 input[type="checkbox"] { /* Задаємо вигляд кнопки */
+	display: none;
+}
+.btn {
+	font-size: 24px;
+	font-weight: 800;
+	background: #678899;
+	border-radius: 34px;
+	border: none;
+	padding: 21px 34px;
+	cursor: pointer;
+}
+.btn:active {
+	background: #557788;
+}
+
+/* Розширення форми */
+.form-panel {
+	text-align: left;
+	background: #47f;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	display: none;
+	z-index: 20;
+	
+/*	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;*/
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+}
+.next-forms {
+	position: relative;
+	overflow: hidden
+}
+
+.open:checked ~ .form-panel {   /* форма з’являється при натисканні на кнопку */
+	display: block;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	transform: translateY(0);
+}
+
+/*ОФОРМЛЕННЯ СПЛИВАЮЧОЇ ФОРМИ*/
+
+.form2 {
+	background: #000;
+	padding-top: 33px;
+	padding-bottom: 30px;
+	font-size: 18px;
+	font-weight: 600;
+}
+.form2col1, .form2col2, .form2col3 {
+	width: 33%;
+	float: left;
+	box-sizing: border-box;
+}
+
+.form2col1 label { 
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	font-size: 18px;
+	font-weight: 600;
+	margin-right: 25px;
+	padding-right: 40px;
+	padding-top: 15px;
+	line-height: 1.4;
+}
+.form2col1 label:after { /* Малюємо нові радіокнопки */
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	right: 0px;
+	bottom: 1px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+.form2col1 input[type="radio"]:checked + label:after { /* При натисканні з’являється галочка в радіокнопці */
+	content: url(../img/shape.png);
+	text-align: center;
+	line-height: 15px;
+}
+/* Поле для вводу площі */
+.field {
+	padding: 10px 0;
+}
+.field sup {
+	font-size: 10px;
+}
+.field .number {
+	position: relative;
+	bottom: -11px;
+	overflow: hidden;
+	display: inline-block;
+	border: 1px solid #fff;
+	margin-left: 13px;
+	padding: 0px 10px ;
+	width: 51px;
+	height: 29px;
+}
+.field .number input[type="number"] {
+	position: relative;
+	left: 15px;
+	border: none;
+	margin: 0;
+	width: 80px;
+	padding: 0;
+}
+
+.field input/*, .form2col2 select*/ {
+	background: none;
+	color: #fff;
+	border: 1px solid #fff;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.6;
+	margin-left: 13px;
+	padding-left: 8px;
+}
+
+/* Поле для вводу міста */
+.field .town input {
+	height: 29px;
+	width: 308px;
+
+}
+
+/* Термін здачі (оформлення дати за допомогою маски дати + jQuery)*/
+#data {
+	width: 105px;
+	margin-left: 20px;
+}
+
+/* Оформлення стилю */
+/* стиль для ескплорера */
+.list>.inselect>.select {
+	font-size: 18px;
+	height: 30px;
+	padding-left: 5px;
+	color: #fff;
+	background: none;
+}
+.inselect {
+	display: inline-block;
+}
+/* Основная часть */
+.cusel {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	height: 30px;
+	font-size: 18px;
+	font-weight: 600;
+	border: 1px solid #ffffff;
+	border-radius: none;
+	background: none;
+	vertical-align: middle;
+	cursor: pointer;
+	outline: none;
+	margin-left: 10px;
+}
+/* Стрелочка справа */
+.cuselFrameRight {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 30px;
+	background: url(../img/arrow.png) no-repeat center;
+}
+/* Текст в селекте */
+.cuselText {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	height: 30px;
+	padding: 0 5px 0 8px;
+	font-style: 18px;
+	line-height: 30px;
+	color: #fff;
+	cursor: pointer;
+	overflow: hidden;
+}
+.living {
+	margin-bottom: 10px;
+	position: relative;
+	/*display: none;*/
+}
+
+html .cuselText {
+	height: 30px;
+}
+/* Оформление пунктов списка */
+.cusel span {
+	display: block;
+	padding: 5px 5px;
+	color: #fff;
+	background: #292929;
+	zoom: 1;
+	cursor: pointer;
+	white-space: nowrap;
+	border-bottom: 1px solid #101010;
+	position: relative;
+
+}
+.cusel-scroll-pane {
+	width: 199px;
+}
+.living .cusel-scroll-pane {
+	width: 80px;
+
+}
+
+/* Оформление выпадающего списка */
+.cusel .cusel-scroll-wrap {
+	position: absolute;
+	left: -1px;
+	top: 100%;
+	display: block;
+	width: auto;
+	height: auto !important;
+	border: 1px solid #fff;
+}
+	
+.cuselOpen {z-index: 999;}
+
+
+
+/* Побажання */
+.wishes {
+	margin-top: 15px;
+}
+#wish {
+	max-width: 99%;
+	min-width: 99%;
+	min-height: 110px;
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	background: none;
+	color: #fff;
+	border: 2px solid #fff;
+	padding: 10px;
+}
+textarea::-moz-placeholder {
+	color: #fff;
+	opacity: 1;
+	font-family: "Gotham Pro";
+}
+
+
+/*Нижня частина форми*/
+.form3 {
+	background: #292929;
+	padding: 30px 0;
+}
+
+.form3bottom {
+	color: #fff;
+	background: none;
+	border: 2px solid #fff;
+	box-sizing: border-box;
+	width: 23%;
+	margin-right: 2%;
+	padding: 0 20px;
+	height: 68px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+/* 	ОФОРМЛЕННЯ ЗРАЗКІВ РОБІТ	*/
+
+.example {
+	position: relative;
+	float: left;
+	max-width: 480px;
+	width: 25%;
+	color: #fff;
+}
+.example img {
+	width: 100%;
+	display: block;
+}
+.example div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 38px;
+}
+.example div h5 {
+	font-size: 30px;
+	font-weight: 800;
+	margin-bottom: 30px;
+}
+.example div p {
+	font-size: 18px;
+	font-weight: 800;
+	margin-bottom: 20px;
+
+}
+.example div span {
+	font-size: 13px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+.last .small {
+		display: none;
+	}
+.last div {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+.last div h5 {
+	margin: 50% 0;
+	text-align: center;
+}
+
+.example:hover {
+	color: #ccc;
+	opacity: 0.8;
+}
+.example:active {
+	opacity: 0.6;
+}
+
+/* ОФОРМЛЕННЯ ХЕШТЕГІВ І ОПИСУ*/
+
+.sections {
+	color: #292929;	
+
+}
+
+.sections ul {
+	text-align: center;
+	background: #292929;
+	list-style: none;
+	padding:  31px 0 29px;
+}
+.sections ul li {
+	display: inline-block;
+	margin: 0 6px;
+}
+.sections ul li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: 800;
+	vertical-align: bottom;
+	background: #777777;
+	padding: 16px;
+	border-radius: 28px;
+}
+.sections ul li a:hover {
+	color: #eee;
+}
+.sections ul li a:active {
+	background: #555;
+}
+
+.sections .content {
+	margin: 60px auto;
+}
+.text {
+	overflow: hidden;
+	height: 235px;
+}
+
+.sections p {
+	line-height: 23px;
+	padding: 0 5px 32px 5px;
+}
+.read {
+	font-size: 24px;
+	font-weight: 800;
+	margin: 20px auto;
+	text-align: center;
+}
+.read a {
+	display: inline-block;
+	text-decoration: none;
+	background: #678899 url(../img/arrow2.png) 30px center no-repeat;
+	color: #fff;
+	box-sizing: border-box;
+	line-height: 1;
+	padding: 20px 30px 24px 67px;
+	border-radius: 34px; 
+}
+.read a:active {
+	background: #557788 url(../img/arrow2.png) 30px center no-repeat;
+}
+
+/* ОФОРМЛЕННЯ ФУТЕРА */
+
+.footer {
+	background: #000 url(../img/fon-footer.jpg) center 0 no-repeat;
+}
+
+.footer h1 {
+	margin: 0;
+	text-align: center;
+	padding: 130px 0 20px;
+}
+.footer p, .footer span {
+	max-width: 960px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 42px 0;
+	
+}
+
+.footer p {
+	font-size: 30px;
+	font-weight: 600;
+}
+.footer span {
+	display: block;
+	font-size: 24px;
+}
+.footer .content {
+	background: none;
+	text-align: center;
+
+}
+.footer .form3bottom {
+	width: 31%;
+	margin-bottom: 41px;
+}
+.footer .content .form3bottom:nth-child(3) {
+	margin-right: 0;
+}
+
+#button3 {
+	color: #fff;
+	width: 378px;
+	padding: 20px 34px;
+	margin-bottom: 115px;
+}
+.network, .contacts2 {
+	text-align: center;
+	list-style: none;
+}
+.network {
+	margin-bottom: 36px;
+}
+.network li, .contacts2 li {
+	display: inline-block;
+	
+}
+.network li {
+	margin-right: 19px;
+}
+.network li a {
+	display: block;
+	width: 36px;
+	height: 36px;	
+}
+.network li:nth-child(1) a {
+	background: url(../img/sprite.png) 0 0px no-repeat;
+}
+.network li:nth-child(2) a {
+	background: url(../img/sprite.png) 0 -38px no-repeat;
+}
+.network li:nth-child(3) a {
+	background: url(../img/sprite.png) 0 -76px no-repeat;
+}
+.network li:nth-child(4) a {
+	background: url(../img/sprite.png) 0 -114px no-repeat;
+}
+.network li:nth-child(5) a {
+	background: url(../img/sprite.png) 0 -152px no-repeat;
+}
+.contacts2 {
+	padding-bottom: 35px;
+}
+.contacts2 li {
+	margin-right: 50px;
+}
+.contacts2 li:last-child {
+	margin-right: 0px;
+}
+.contacts2 a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+
+
+
+@media (max-width: 1336px) {
+	.header {
+		/*height: 767px;*/
+		padding-bottom: 0;
+		background: #000 url(../img/header_fon960.png) center 0 no-repeat;
+		background-size: cover;
+		padding-bottom: /*30px*/;
+	}
+	.content {
+		width: 873px;
+	}
+	.hide-nav  {
+		display: block;
+	}
+	.hide-nav.active .hide-nav_line {
+		background: #678899;
+	}
+	.menu {
+		display: none;
+		position: absolute;
+		top: 116px;
+		right: -29px;
+		width: 415px;
+		background: #292929;
+		float: none;
+		height: auto;
+	}
+
+	.menu > li {
+		position: relative;
+		width: 200px;
+		float: none;
+		margin: 45px auto;
+		padding: 0;
+		text-align: center;
+
+	}	
+	.menu > li a {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.menu > li:first-child {
+		margin: 0 auto;	
+		padding-top: 45px;
+	}
+	.menu > li:last-child {
+		float: none;
+		width:100px;
+		margin: 0 auto;
+		padding-bottom: 45px;
+		padding-right: 0;
+	}
+	.menu > li:last-child:after {
+		content: url(../img/shape-lang.png);
+		position: absolute;
+		top: -3px;
+		right: 10px;
+	}
+	.header h1 {
+		font-size: 40px;
+		width: 70%;
+		line-height: 1.4;
+		margin-top: 233px;
+		margin-bottom: 113px;
+	}
+	.header > .content > div h4 {
+		font-size: 24px;
+	}
+	.header > .content > div p{
+		font-size: 14px;
+		padding-right: 21%;
+		line-height: 1.8;
+	}
+	.header > .content > div:nth-child(4) p {
+		padding-right: 25%;
+	}
+	/* FORMA */
+	/* Перша колонка */
+	.form-col1, .form-col2, .form-col3 { 
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.form-col1 {
+		padding: 40px 0 0;
+	}
+	.form-col1 h3 {
+		font-size: 36px;
+	}
+	.form-col1 p {
+		padding-top: 10px;
+		max-width: none;
+	}
+	.form-col2 {
+		padding-top: 40px;
+	}
+	.form-col2 input[type="text"] {
+		width: 384px;
+		border-width: 1px;
+		padding: 17px 25px;
+	}
+	.form-col2 label {
+		width: 15%;
+		text-align: left;
+	}
+	.form-col3 {
+		max-width: none;
+		padding: 44px 0 58px;
+	}
+	.form2 {
+		padding-bottom: 0;
+	}
+	.form2col1, .form2col2 {
+		width: 50%;
+	}
+
+	.form2col3 {
+		float: none;
+		width: 100%;
+		overflow: hidden;
+	}
+	#wish {
+		box-sizing: border-box;
+	}
+
+	.form3 {
+		padding: 38px 0 72px;
+		background: #000;
+	}
+	.form3bottom {
+		box-sizing: border-box;
+		width: 274px;
+		margin-right: 17px;
+		font-size: 16px;
+	}
+	.form3 .form3bottom:nth-child(3) {
+		margin-right: 0%;
+	}
+	.form3 .btn {
+		display: block;
+		width: 207px;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 61px;
+		font-size: 16px;
+	}
+
+
+	.example-box {
+		max-width: 960px;
+		margin: 0 auto;
+		height: auto;
+	}
+	.example {
+		width: 50%;
+	}
+	.sections .hashtags li a {
+		font-size: 18px;
+		padding-right: 32px;
+		padding-left: 32px;
+	}
+	.about {
+		display: none;
+	}
+
+	.footer h1 {
+		font-size: 36px;
+		padding-top: 60px;
+		padding-bottom: 0;
+	}
+	.footer p, .footer span {
+		font-size: 18px;
+		width: 80%;
+		line-height: 1.7;
+	}
+	.footer p{
+		padding-bottom: 0;
+	}
+	.footer .form3bottom {
+		font-size: 18px;
+		width: 500px;
+		margin-right: 0;
+		margin-bottom: 33px;
+	}
+	#button3 {
+		display: block;
+		box-sizing: border-box;
+		width: 224px;
+		font-size: 18px;
+		margin: 0 auto 90px;
+		padding: 16px 25px;
+	}
+	input::-moz-placeholder {
+		color: #fff;
+		opacity: 1;
+	}
+	
+}
+
+
+@media (max-width: 960px) {
+	.wrapper {
+		min-width: 440px;
+	}
+	.content {
+		width: 420px;
+		min-width: 420px;
+	}
+	.head {
+		height: 82px;
+	}
+	.logo img {
+		position: relative;
+		top: -15px;
+		width: 138px;
+	}
+	.contacts {
+		box-sizing: border-box;
+		height: 82px;
+		width: 204px;	
+		padding-top: 12px;
+		right: 52px;	
+	}
+	.contacts p {
+		font-size: 	12px;
+		margin: 2px 12px;	
+	}
+	.contacts span {
+		font-size: 13px;	
+		padding-left: 11px;	
+	}
+	.contacts p:nth-child(1) span {
+		padding-left: 24px;
+	}
+	.hide-nav {
+		top: 30px;
+		right: 0;
+		width: 30px;	
+		height: 22px;	
+	}
+	.hide-nav_line {
+		height: 4px;
+	}
+
+	.hide-nav_line-middle {
+		top: 9px;
+		right: 0;
+	}
+	.menu {
+		top: 82px;
+		right: 0px;
+		width: 256px;
+	}
+	.menu li {
+		font-size: 14px;
+	}
+	.menu > li {
+		margin: 20px auto;
+	}
+	.menu > li:last-child {
+		font-size: 14px;
+		padding-bottom: 20px;
+	}
+	.menu > li:first-child {
+		padding-top: 20px;
+	}
+
+	.header h1 {
+		font-size: 30px;
+		width: 100%;
+		line-height: 1.4;
+		margin-top: 155px;
+		margin-bottom: 93px;
+	}
+	.header > .content > div:nth-child(4),
+	.header > .content > div {
+		float: none;
+		width: 100%;
+		margin-top: 37px;
+	}
+	.header > .content > div h4 {
+		padding-bottom: 10px;
+	}
+	.header > .content > div p {
+		width: 100%;
+	}
+
+	/* FORMA */
+	/* Перша колонка */
+
+	.form-col1 {
+		padding: 33px 0 0;
+	}
+	.form-col1 h3 {
+		font-size: 30px;
+	}
+	.form-col1 p {
+		font-size: 16px;
+		padding-top: 25px;
+	}
+	.form-col2 {
+		padding-top: 18px;
+	}
+	.form-col2 p {
+		margin-top: 30px;
+	}
+	.form-col2 input[type="text"] {
+		width: 374px;
+		border-width: 2px;
+		padding: 17px 20px;
+	}
+	.form-col2 label {
+		width: 27%;
+		margin-left: 8px;
+	}
+	.form-col3 {
+		padding: 40px 0 52px;
+	}
+	.btn {
+		font-size: 18px;
+		padding: 17px 34px;
+	}
+
+	.form2 {
+		padding-top: 19px;
+	}
+	.form2col1, .form2col2 {
+		width: 100%;
+	}
+	.form3 {
+		padding: 34px 0 34px;
+		background: #000;
+	}
+	.form3bottom {
+		width: 100%;
+		margin-right: 0px;
+		margin-bottom: 34px;
+		font-size: 16px;
+	}
+	.form3 .btn {
+		padding: 17px 17px;
+		margin-top: 0px;
+		font-size: 18px;
+	}
+
+	.example-box {
+		max-width: 480px;
+	}
+	.example {
+		width: 100%;
+	}
+	.last {
+		position: relative;
+	}
+	.last div {
+	}
+	.last div h5 {
+	position: relative;
+	top: 35%;
+	left: 35%;
+	width: 65%;
+	margin: 0;
+	text-align: left;	
+	font-size: 24px;
+
+	}
+	.last .big {
+		display: none;
+	}
+	.last .small {
+		display: block;
+	}
+	.sections {
+		background: #292929;
+	}
+	.sections .hashtags li {
+		float: left;
+		margin: 5px 17px 5px 0;
+	}
+	.sections .hashtags {
+		overflow: hidden;
+		max-width: 420px;
+		margin: 0 auto;
+		padding: 26px 0 24px;
+	}
+	.sections .hashtags li a {
+		font-size: 14px;
+		padding: 12px 32px;
+	}
+
+	.footer {
+		background-size: cover; 
+	}
+	.footer h1 {
+		font-size: 30px;
+		padding-top: 60px;
+	}
+	.footer p, .footer span {
+		font-size: 16px;
+		width: 80%;
+		line-height: 1.7;
+		padding-top: 30px;
+	}
+	.footer .content {
+		padding: 0;
+	}
+
+	.footer .form3bottom {
+		font-size: 18px;
+		max-width:420px;
+		/*width: 100%;*/
+	/*	box-sizing: border-box;*/
+		margin-bottom: 33px;
+	}
+	#button3 {
+		display: block;
+		box-sizing: border-box;
+		width: 224px;
+		font-size: 18px;
+		margin: 0 auto 90px;
+		padding: 16px 25px;
+	}
+	input::-moz-placeholder {
+		color: #fff;
+		opacity: 1;
+	}
+	.contacts2 li {
+		margin: 0 0 10px;
+		display: block;
+	}
+	.contacts2 li:last-child {
+		margin-bottom: 0;
+	}
+}
